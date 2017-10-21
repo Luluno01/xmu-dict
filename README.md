@@ -28,6 +28,7 @@ sails lift
 # API
 *NOTE: All parameters are passed in request body or query string*
 *NOTE: The default type of returned data is `JSON`*
+
 |   url    |      parameter(s)      |   parameter data type   |  returns  |  request method  |
 |----------|------------------------|-------------------------|-----------|------------------|
 | `grade/` | `username`, `password` |   `string`, `string`    |  `JSON`   |      `GET`       |
