@@ -10,7 +10,9 @@ A dictionary of compus life for XMU students.
     1. [Install sails.js](#install-sailsjs)
     2. [Clone](#clone)
     3. [Install Dependencies](#install-dependencies)
-    4. [Run Server](#run-server)
+    4. [Create local.js](#create-localjs)
+    5. [Setup Database](#setup-database)
+    6. [Run Server](#run-server)
 2. [API](#api)
 
 # Setup
@@ -45,7 +47,7 @@ module.exports = {
 ```
 then save && close
 
-## Setup database
+## Setup Database
 
 XMU-Dict uses cache so a database is required. Please follow several steps below to setup database:
 
