@@ -46,4 +46,4 @@ sails lift
 
 *NOTE: The default type of returned data is `JSON`*
 
-For more detail, [click me](#https://github.com/Luluno01/xmu-dict/wiki/APIs).
+For more detail, [click me](#"https://github.com/Luluno01/xmu-dict/wiki/APIs").
