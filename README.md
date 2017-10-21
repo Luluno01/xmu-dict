@@ -1,4 +1,5 @@
-# xmu-dict
+# XMU-Dict
+a dictionary of compus life for XMU students.
 
-a [Sails](http://sailsjs.org) application
-"# XMU-Dict" 
+powered by [Sails](http://sailsjs.org).
+
