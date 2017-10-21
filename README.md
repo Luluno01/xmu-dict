@@ -29,7 +29,7 @@ sails lift
 *NOTE: All parameters are passed in request body or query string*
 *NOTE: The default type of returned data is `JSON`*
 |   url    |      parameter(s)      |   parameter data type   |  returns  |  request method  |
---------------------------------------------------------------------------------
+|----------|------------------------|-------------------------|-----------|------------------|
 | `grade/` | `username`, `password` |   `string`, `string`    |  `JSON`   |      `GET`       |
 
 ## grade/
@@ -38,7 +38,7 @@ Please note that there is a slash (`/`) after `grade`.
 
 ### Error Codes
 | status | reason |
-------------------
+|--------|--------|
 | `400`  | The server cannot find the username or password in request body or query string; The username doesn't match the password |
 | `504`  | Remote server timeout |
 | `502`  | Remote server error (the remote server returns an error which cannot be handler by this server); Unknown response from the remote server |
