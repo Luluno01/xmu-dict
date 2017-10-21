@@ -19,6 +19,8 @@
  * http://sailsjs.org/#!/documentation/reference/sails.config/sails.config.connections.html
  */
 
+const local = require('./local.js');
+
 module.exports.connections = {
 
   /***************************************************************************
@@ -28,9 +30,9 @@ module.exports.connections = {
   * Installed by default.                                                    *
   *                                                                          *
   ***************************************************************************/
-  localDiskDb: {
-    adapter: 'sails-disk'
-  },
+  // localDiskDb: {
+  //   adapter: 'sails-disk'
+  // },
 
   /***************************************************************************
   *                                                                          *
@@ -40,13 +42,7 @@ module.exports.connections = {
   * Run: npm install sails-mysql                                             *
   *                                                                          *
   ***************************************************************************/
-  // someMysqlServer: {
-  //   adapter: 'sails-mysql',
-  //   host: 'YOUR_MYSQL_SERVER_HOSTNAME_OR_IP_ADDRESS',
-  //   user: 'YOUR_MYSQL_USER', //optional
-  //   password: 'YOUR_MYSQL_PASSWORD', //optional
-  //   database: 'YOUR_MYSQL_DB' //optional
-  // },
+  mysql: local.mysql,
 
   /***************************************************************************
   *                                                                          *
