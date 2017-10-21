@@ -9,15 +9,10 @@ module.exports = {
 	'': function(req, res) {
 		const method = req.method.toUpperCase();
 		const handler = {
-			GET: () => {
-				res.ok('GET: Grade page');
-			},
 			POST: () => {
-				// res.ok('POST: auth page');
-				// var option = {
-				// 	username: req,
-				// 	password: req,
-				// };
+				res.ok('POST: Grade page');
+			},
+			GET: () => {
 				if(!req.param('username') || !req.param('password')) {
 					res.badRequest();
 					return;

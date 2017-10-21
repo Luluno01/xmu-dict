@@ -1,4 +1,4 @@
-var res;
+/*var res;
 var req;
 var err;
 
@@ -104,4 +104,8 @@ ajax(states.login);
 // 	'goto': 'http://ssfw.xmu.edu.cn/cmstar/loginSuccess.portal',
 // 	'gotoOnFail': 'http://ssfw.xmu.edu.cn/cmstar/loginFailure.portal'
 // }).end(handler);
-// var req = agent.get('http://ssfw.xmu.edu.cn/cmstar/index.portal?.pn=p1201_p3535').end(handler);
+var req = agent.get('http://localhost:1337/grade/').send({
+	'username':'22920152203933',
+	'password': '123142'
+}).end(handler);
+// var req = agent.get('http://ssfw.xmu.edu.cn/cmstar/index.portal?.pn=p1201_p3535').end(handler);*/
