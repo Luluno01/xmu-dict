@@ -51,13 +51,16 @@ then save && close
 
 XMU-Dict uses cache so a database is required. Please follow several steps below to setup database:
 
-1. Install MySQL (or some other database, but you would need to modify `/config/connections.js` and `/config/models.js` by yourself if you don't use MySQL)
+1. Install MySQL (or some other database)
 2. Create a database (Collation: `utf8`).
-3. Configure connections. Add database connection settings in `/config/local.js`:
+3. Configure connections. Add database connection settings in `/config/local.js` based on the database you are actually using:
 ```
 module.exports = {
   // Some codes
-  mysql: {
+  models: {
+    connection: someCustomConnectionName // e.g. 'mysql'
+  },
+  someCustomConnectionName: { // e.g. 'mysql'
     adapter: 'sails-mysql', // Or some other adapter if you don't use MySQL
     host: databaseHost,
     user: username, //optional
