@@ -17,6 +17,9 @@ module.exports = {
     },
     grade: {
       type: 'json'
+    },
+    card: {
+      type: 'json'
     }
   }
 };
